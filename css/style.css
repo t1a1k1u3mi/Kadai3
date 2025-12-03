@@ -75,6 +75,9 @@ body {
 #reservation {
   max-width: 200px;
 }
+.message {
+  display: none;
+}
 /* エラーメッセージ用 */
 .error-text {
   color: #de3f2e;
