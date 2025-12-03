@@ -44,7 +44,21 @@
             <input type="text" /> 13時 ～ 14時
             <p id="reservation-error" class="error-text"></p>
           </dd>
+          <dt><label for="tipe">受講形式</label><span>必須</span></dt>
+          <dd>
+            <input class="form-check-input" type="radio" name="type" onclick="formSwitch()">オンラインで受講<br>
+            <input class="form-check-input" type="radio" name="type" onclick="formSwitch()">会場で受講
+          </dd>
         </dl>
+        <ul>
+          <div id="online-message" class="message">
+            当日はオンライン会議システムを使用いたします。 <br>ご受講にあたり、端末とネットワーク環境が必要になりますのでご準備をお願いいたします。 <br>参加方法については、前日までに別途ご案内を差し上げます。
+          </div>
+          
+          <div id="offline-message" class="message">
+            【会場情報】 <br>会場：新宿プラザ1F Room3 <br>住所：〒100-0000　東京都新宿区新宿1-1-1 <br>電話番号：00-0000-0000
+          </div>
+        </ul>
 
         <div class="button-area">
           <button id="submit-button" type="button" value="">

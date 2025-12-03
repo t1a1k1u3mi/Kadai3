@@ -33,3 +33,17 @@ $(function () {
     }
   });
 });
+function formSwitch() {
+  const hoge = document.getElementsByName('type');
+  if (hoge[0].checked) {
+    document.getElementById('online-message').style.display = "block";
+    document.getElementById('offline-message').style.display = "none";
+  } else if (hoge[1].checked) {
+    document.getElementById('online-message').style.display = "none";
+    document.getElementById('offline-message').style.display = "block";
+  } else {
+    document.getElementById('online-message').style.display = "none";
+    document.getElementById('offline-message').style.display = "none";
+  }
+}
+window.addEventListener('load', formSwitch);
